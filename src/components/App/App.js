@@ -20,7 +20,14 @@ class App extends Component {
   }
 
   handleDeleteRequest(e){
-    console.log(e)
+    let projects = this.state.projects
+    for(var i = 0; i < projects.length; i++) {
+      console.log(projects)
+      if(projects[i].id === e){
+        projects.splice(i, 1);
+      };
+    };
+    this.setState({projects: projects})
   }
 
   componentWillMount(){
