@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Project from '../Project'
 import AddProject from '../AddProject'
+import uuid from 'uuid'
 
 class App extends Component {
   constructor(){
@@ -27,15 +28,18 @@ class App extends Component {
       projects: [
         {
           title: 'Marie',
-          type: 'girl'
+          type: 'girl',
+          id: uuid.v4()
         },
         {
           title: 'Eva',
-          type: 'girl'
+          type: 'girl',
+          id: uuid.v4()
         },
         {
           title: 'Thomas',
-          type: 'boy'
+          type: 'boy',
+          id: uuid.v4()
         }
       ]
     });

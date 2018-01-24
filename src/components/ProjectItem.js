@@ -7,7 +7,7 @@ class ProjectItem extends Component {
   render() {
     return(
       <li>
-        {this.props.project.title} - {this.props.project.type} <button onClick={this.handleDeleteRequest.bind(this, this.props.project.title)}>x</button>
+        {this.props.project.title} - {this.props.project.type} <button onClick={this.handleDeleteRequest.bind(this, this.props.project.id)}>x</button>
       </li>
     );
   };
